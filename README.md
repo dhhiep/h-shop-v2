@@ -1,24 +1,30 @@
-# README
+# HSHOP v2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### The purpose to built this project
+HShop is a little e-commerce project, so it's like a simple shopping cart project. I want to make for my friends, who need a online store to sell anything they want, clothes, shoes, tools or even service provider.
+Other way, I want to practise my skills, techniques and technology, I was learning and apply in this project.
 
-Things you may want to cover:
+### Trello Board
+https://trello.com/b/MTL5UZrv/hshop
 
-* Ruby version
+### Development setup
 
-* System dependencies
+  1. Clone project and install gem
+  ```bash
+  git clone git@github.com:dhhiep/h-shop-v2.git
+  cd h-shop-v2
+  bundle install
+  ```
 
-* Configuration
+  2. Update environment variables
+  ```
+  Rename .env.example to .env
+  Update missing value
+  ```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  3. Setup database
+  ```
+  bundle exec rake db:create
+  bundle exec rake db:migrate
+  bundle exec rake db:seed
+  ```
