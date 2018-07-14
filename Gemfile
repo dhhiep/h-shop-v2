@@ -38,7 +38,11 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Authenticate and authorized
+gem 'devise'
+
 group :development, :test do
+  gem "letter_opener" # Maler server for development
   gem 'ffaker'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
