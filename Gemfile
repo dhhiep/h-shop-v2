@@ -40,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Authenticate and authorized
 gem 'devise'
+gem 'cancancan', '~> 2.0'
 
 group :development, :test do
   gem "letter_opener" # Maler server for development
